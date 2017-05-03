@@ -1,5 +1,6 @@
 # ec-auto
 Automate using erlangcentral.org REST API 
+Example URL: http://erlangcentral.org/wp-json/wp/v2/posts?categories=20
 
 ## Usage
 
