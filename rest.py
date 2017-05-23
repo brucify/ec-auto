@@ -32,7 +32,11 @@ for one_post in json_result:
     'job_location': job_location}
 
     if date.today().isoformat() < job_end_date:
-        print (json.dumps(data, indent=4, sort_keys=True))
+        # print (json.dumps(data, indent=4, sort_keys=True))
+        print(data['job_title'].encode('ascii', 'ignore').decode('ascii'))
+        print(data['job_company'] + " - " + data['job_location'])
+        print(data['job_url'])
+        print("\n")
         jobs.append(data)
 
 
